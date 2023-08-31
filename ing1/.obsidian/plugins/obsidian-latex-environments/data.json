@@ -1,0 +1,7 @@
+{
+  "defaultEnvironment": "multline",
+  "customEnvironments": [
+    "array",
+    "cases"
+  ]
+}
