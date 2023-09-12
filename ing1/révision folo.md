@@ -193,3 +193,105 @@ $$
 supposons que l’on peut ranger toutes les paires sans qu’il n’y en ait 2 dans un tiroir, cela implique qu’il y a autant de chaussettes que de tiroirs ce qui contredis la proposition de base.
 
 supposons e n>0 est le carré d’un entier et que 2n est le carré d’un entier, il existe alors un entier k tel que $k\times k=2n\implies k\times k=2(x^{2})$ avec $x\in \mathbb{Z}$ et $x^{2}=n$  
+
+# Logique propositionnelle et motifs de preuve
+- [x] Regarder la [[folo_slides_1_handout.pdf]]
+- [x] Regarder la [[folo_slides_2_handout.pdf]]
+- [ ] Exercices de TD
+> [!SUMMARY] Objectifs
+>1. Compétences attendues
+>2. Compétences attendues
+## Manipulation de variables et de propositions
+Deux objets mathématiques similaire se doivent d'avoir des noms similaires afin d'éviter des erreurs. Ainsi on choisira d'écrire $(x,y)\in\mathbb{R}^{2}, (n,m)\in\mathbb{N}^{2}$ au lieu de $(n,y)\in\mathbb{R}^{2}, (x,m)\in\mathbb{N}^{2}$
+Une proposition est une affirmation à laquelle est associée une valeur vrai ou fausse. 
+>[!INFO] Principe du tiers exclu
+>Une proposition *P* est soit vraie, soit fausse.
+## Connecteurs Logique
+Les vérités mathématiques sont exprimés comme des **théorèmes**: si une hypothèse *P* est vraie alors on en déduit proposion *Q* également vraie. On l'écrit $P\Rightarrow Q$.
+>[!WARNING] Attention
+>*Q* vraie et *P* fausse ne contredit pas $P\Rightarrow Q$.
+>$P\Rightarrow Q$ est une relation contractuelle, ainsi *P* n'a pas besoin d'être vraie pour que *Q* le soit. De plus, *P* ne cause pas *Q*.
+>Si *P* vraie **et** $P\Rightarrow Q$ est vraie **alors** *Q* est vraie.
+
+>[!SUMMARY] Raisonnement permettant de prouver que $P\Rightarrow Q$ est vraie.
+>Si *P* vraie ...
+> - **Rappel des définitions** Expression de *P* de manière détaillé en exprimant ses défitions explicites
+> - **Écrire des propriétés communes** Est-ce-que l'on peut penser à des conséquences immédiate de *P*
+> 
+>... alors *Q* est vraie.
+
+Soient 2 propositions *P* et *Q*, $P\lor Q$ permet d'exprimet *P vraie* **ou** *Q vraie*.
+>[!WARNING] Attention
+>Il ne s'agit pas d'un 'ou' français classique. Il se traduit par 'au moins un des deux'.
+>Le 'ou' français est appelé *ou exclusif* ou *XOR* et permet d'exprimer *l'un ou l'autre, mais pas les deux*
+
+>[!SUMMARY] Raisonnement permettant de prouver que $P\Rightarrow (Q\lor R)$ est vraie.
+>Si *P* vraie ...
+> - **On a une disjonction** *Q* peut être vraie ou fausse, l'important est que $(Q\lor R)$ soit vraie.
+> 1. **On suppose Q vraie**
+> Alors $(Q\lor R)$ est forcément vraie.
+> 2. **On suppose Q faux** 
+> ... alors *R* est vraie.
+
+>[!SUMMARY] Raisonnement permettant de prouver que $(P\lor Q)\Rightarrow R$ est vraie.
+>1. **Prouver que $P\Rightarrow R$ est vraie**
+> Si *P* est vraie ...
+> ... alors *R* est vraie
+>2. **Prouver que $Q\Rightarrow R$ est vraie**
+>Si *Q* est vraie ...
+>... alors *R* est vraie.
+>3. **Conclusion**
+
+Pour exprimer $(P\Rightarrow Q) \land (Q\Rightarrow P)$ on utilise la relation *d'équivalence*, s'écriant $P\Leftrightarrow Q$.
+>[!SUMMARY] Raisonnement permettant de prouver que $P\Leftrightarrow Q$ est vraie.
+>1. **Prouver que $P\Rightarrow Q$ est vraie**
+> Si *P* est vraie ...
+> ... alors *Q* est vraie
+>2. **Prouver que $Q\Rightarrow P$ est vraie**
+>Si *Q* est vraie ...
+>... alors *P* est vraie.
+>3. **Conclusion**
+
+Soit *P* une proposition, on appelle négation de *P*, notée $\overline{P}$, la proposition opposée. C'est-à-dire quand *P* est vraie alors $\overline{P}$ est fausse, et inversemement.
+>[!INFO] Principe du tiers exclu
+>Une proposition *P* est soit vraie, soit fausse.
+>Cela revient à écrire: $P\lor\overline{P}$ est toujours vraie.
+
+## Autres Preuves
+>[!SUMMARY] Raisonnement par l'absurde
+>Si *P* est vraie ...
+>1. **On suppose $\overline{Q}$ est vraie**
+>... on prouve quelquechose qui contredit *P* ou une autre vérité.
+>
+>Alors *Q* n'est pas faux et doit être vraie par principe du tiers exclu.
+
+>[!SUMMARY] Raisonnement par contraposée $(P\Rightarrow Q)\Leftrightarrow (\overline{Q}\Rightarrow\overline{P})$
+> Si $\overline{Q}$ est vraie ...
+> ... alors $\overline{P}$ est vraie.
+> D'où $P\Rightarrow Q$ est vraie.
+
+>[!SUMMARY] Raisonnement au cas par cas
+>1. **Prouver que $(P\land R)\Rightarrow Q$ est vraie**
+> Si $P\land R$ est vraie ...
+> ... alors *Q* est vraie
+>2. **Prouver que $(P\land\overline{R})\Rightarrow Q$ est vraie**
+>Si $P\land\overline{R}$ est vraie ...
+>... alors *Q* est vraie.
+>3. **Conclusion**
+
+## Équivalences Logique Communes
+$\overline{\overline{P}}\Leftrightarrow P$
+$P\land(Q\lor R) \Leftrightarrow (P\land Q)\lor(P\land R)$
+$P\lor(Q\land R) \Leftrightarrow (P\lor Q)\land(P\lor R)$
+$\overline{(P\lor Q)} \Leftrightarrow \overline{P}\land\overline{Q}$
+$\overline{(P\land Q)} \Leftrightarrow \overline{P}\lor\overline{Q}$
+$P\Rightarrow Q \Leftrightarrow \overline{P}\lor Q$
+$\overline{(P\Rightarrow Q)} \Leftrightarrow P\land \overline{Q}$
+$(P\Rightarrow Q)\Leftrightarrow (\overline{Q}\Rightarrow\overline{P})$
+
+## Comment approcher un problème ?
+1. Expliciter toues les hypothèses et leurs définitions
+2. Introduire des notations correctes et des nouvelles variables si besoin
+3. Rechercher des propriétés pertinentes qui peuvent s'appliquer aux hyothèses
+4. Choisir un raisonnement et expliciter chacunes de ses étapes
+5. Trouver un schéma commun entre la conclusion et les étapes intermédiaires
