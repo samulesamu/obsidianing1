@@ -3,7 +3,6 @@
   "table-editor-obsidian",
   "obsidian-asciidoc-blocks",
   "obsidian-better-codeblock",
-  "canvas-mindmap",
   "obsidian-better-command-palette",
   "cmenu-plugin",
   "obsidian-code-block-enhancer",
@@ -23,9 +22,12 @@
   "obsidian-plotly",
   "obsidian-latex-suite",
   "google-calendar",
-  "lovely-mindmap",
   "obsidian-smart-typography",
   "obsidian-prozen",
   "obsidian-git",
-  "obsidian-graphviz"
+  "obsidian-graphviz",
+  "dataview",
+  "mathlinks",
+  "sheets",
+  "pseudocode-in-obs"
 ]

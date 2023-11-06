@@ -341,3 +341,4 @@ $\vec \nabla g\left( 0, \frac{\pi}{2} \right)= e^{0}\binom{\cos\left( \frac{\pi}
 $\mathcal D_{\vec u} g\left( 0, \frac{\pi}{2}\right )= \binom{0}{-1}.\binom{0}{1}=1$
 
 
+

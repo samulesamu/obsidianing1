@@ -303,7 +303,7 @@
             "containerId": null,
             "originalText": "+",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "created": 1647613198483,
@@ -1659,7 +1659,7 @@
             "containerId": null,
             "originalText": "+",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "text",
@@ -1700,7 +1700,7 @@
             "containerId": null,
             "originalText": "-",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "created": 1647612372037,
@@ -3402,7 +3402,7 @@
             "containerId": null,
             "originalText": "+",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "text",
@@ -3443,7 +3443,7 @@
             "containerId": null,
             "originalText": "-",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "line",
@@ -3899,7 +3899,7 @@
             "containerId": null,
             "originalText": "-",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "ellipse",
@@ -3972,7 +3972,7 @@
             "containerId": null,
             "originalText": "+",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "line",

@@ -157,3 +157,13 @@ donc on a bien
 $$
 \sum_{i=1}^{n}|x_{i}-y_{i}|\leq\sum_{i=1}^{n}|x_{i}-z_{i}|+\sum_{i=1}^{n}|z_{i}-y_{i}|
 $$
+
+$x^{n}\underbrace{ (1-x) }_{  }$
+
+$$
+\frac{x}{\frac{1}{n}+1+\frac{x^{2}}{n}}
+$$
+
+$$
+\|x^{n}\|_{\infty}= 0
+$$

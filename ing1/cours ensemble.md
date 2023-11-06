@@ -24,3 +24,10 @@ $\mathcal{P}(E)=\{ \{ 0 \},\{ 1 \},\{ 2 \},\emptyset,\{ 0,1 \},\{ 0,2 \},\{ 1,2 
 
 - $x\in A\setminus B$ ssi $x\in A \wedge x\not \in B$
 - $x\in A^{C}$ ssi $x\not \in A$
+
+
+nombre des classes d’équivalences de $\equiv p$ : 
+$\{ \underbrace{ [0],[1],\dots,[p-1] }_{ p \text{ classes} } \}= \frac{\mathbb{Z}}{p\mathbb{Z}}$
+
+
+
